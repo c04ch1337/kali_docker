@@ -1,4 +1,4 @@
-# Kali Security Lab (Internal Team Edition)
+# Kali Security Container (Internal Team Edition)
 
 A Dockerized Kali Linux environment for internal security teams to perform supplemental vulnerability scanning, PoCs, and remote access through secure SSH tunnels.
 
