@@ -1,0 +1,16 @@
+
+version: '3.8'
+
+services:
+  kali:
+    build: .
+    container_name: kali_sec_lab
+    volumes:
+      - ./shared:/root/work
+    ports:
+      - "2222:22"
+    environment:
+      - SMTP_SERVER=${SMTP_SERVER}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+    restart: unless-stopped
