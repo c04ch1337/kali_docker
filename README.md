@@ -43,3 +43,11 @@ SMTP_SERVER=smtp.yourdomain.com
 SMTP_USER=security@yourdomain.com
 SMTP_PASS=yourpassword
 ```
+
+
+## ✅ CRON Job Usage
+
+To enable the cron jobs when running the container:
+```
+docker run -d -e ENABLE_CRON=true -p 2222:22 -v kali-work:/root/work kali-sec-lab
+```
