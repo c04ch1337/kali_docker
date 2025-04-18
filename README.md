@@ -44,8 +44,18 @@ SMTP_USER=security@yourdomain.com
 SMTP_PASS=yourpassword
 ```
 
+## 🐳 Example Docker Run Command
 
-## ✅ CRON Job Usage
+docker run -d \
+  -e ROOT_PASS='supersecure' \
+  -e ENABLE_CRON=true \
+  -p 2222:22 \
+  -v kali-work:/root/work \
+  -v $(pwd)/shared:/root/shared \
+  --name kali-sec \
+  kali-sec
+
+  ## ✅ CRON Job Usage
 
 To enable the cron jobs when running the container:
 ```
