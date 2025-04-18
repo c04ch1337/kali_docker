@@ -4,7 +4,7 @@ version: '3.8'
 services:
   kali:
     build: .
-    container_name: kali_sec_lab
+    container_name: kali_sec
     volumes:
       - ./shared:/root/work
     ports:
