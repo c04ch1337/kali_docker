@@ -49,5 +49,5 @@ SMTP_PASS=yourpassword
 
 To enable the cron jobs when running the container:
 ```
-docker run -d -e ENABLE_CRON=true -p 2222:22 -v kali-work:/root/work kali-sec-lab
+docker run -d -e ENABLE_CRON=true -p 2222:22 -v kali-work:/root/work kali-sec
 ```
